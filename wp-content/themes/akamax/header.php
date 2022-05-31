@@ -12,7 +12,7 @@
 
 	<title><?php wp_title(); ?></title>
 
-	<link rel="icon" href="<?php echo bloginfo('template_directory'); ?>/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="<?php echo bloginfo('template_directory'); ?>/img/logo.png" type="image/x-icon">
 
 
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory'); ?>/fontawesome/css/all.min.css" />

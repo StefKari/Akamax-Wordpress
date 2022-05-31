@@ -18,10 +18,10 @@
 			<div class="col-lg-3 py-3">
 				<h5>Meni</h5>
 				<ul class="footer-menu">
-					<li><a href="o-nama">O nama</a></li>
-					<li><a href="ponuda">Ponuda</a></li>
-					<li><a href="blog">Blog</a></li>
-					<li><a href="kontakt">Kontakt</a></li>
+					<li><a href="/o-nama">O nama</a></li>
+					<li><a href="/usluge-2">Usluge</a></li>
+					<li><a href="/blog-2">Blog</a></li>
+					<li><a href="/kontakt">Kontakt</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-3 py-3">

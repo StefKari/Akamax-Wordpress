@@ -34,13 +34,21 @@ $args=array(
 
 								<?php 
 								
-								$value = get_field('slika_usluge_post');
+								// $value = get_field('slika_usluge_post');
 
-								$image = $value['sizes']['large'];
+								// $image = $value['sizes']['large'];
 							
-								echo "<img src='".$image."' width='60px' height='60px'>";
-					
+								//echo "<img src='".$image."' width='60px' height='60px'>";
+
+
+								$serviceImgID = get_field('slika_usluge_post');
 								?>
+								<?php if (!empty($serviceImgID)) { ?>
+									<img src="<?php echo $imgID; ?>" alt="" class="img-fluid w-100">
+								<?php } else { ?>
+									<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="" class="img-fluid w-100">
+								<?php } ?>
+					
 								
 							</div>
 							<h5><?php echo get_field('naslov'); ?></h5>
@@ -60,7 +68,7 @@ $args=array(
 <div class="page-section bg-light sk-top-page-content-service">
 	<div class="container">
 		<div class="text-center">
-			<?php echo do_shortcode('[WPSM_AC id=44]') ?>
+			<?php //echo do_shortcode('[WPSM_AC id=44]') ?>
 		</div>
 	</div> <!-- .container -->
 </div> <!-- .page-section -->

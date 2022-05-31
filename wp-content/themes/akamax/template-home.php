@@ -22,13 +22,20 @@
 				<div class="img-fluid ml-5">
 
 					<?php
-					$value = get_field('slika');
+					// $value = get_field('slika');
 
-					$image = $value['sizes']['large'];
+					// $image = $value['sizes']['large'];
 
-					echo "<img src='" . $image . "' alt=''>";
+					// echo "<img src='" . $image . "' alt=''>";
 
+					$image = get_field('slika');
 					?>
+					<?php if (!empty($image)) { ?>
+						<img src="<?php echo $image; ?>" alt="">
+					<?php } else { ?>
+						<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="">
+					<?php } ?>
+
 				</div>
 			</div>
 		</div>
@@ -61,13 +68,21 @@
 				<div class="col-lg-6 py-3 wow fadeInRight">
 					<div class="img-fluid text-center">
 						<?php
-						$value = get_field('info-slika');
+						// $value = get_field('info-slika');
 
-						$image = $value['sizes']['large'];
+						// $image = $value['sizes']['large'];
 
-						echo "<img src='" . $image . "' alt=''>";
+						// echo "<img src='" . $image . "' alt=''>";
 
+
+						$homeInfoImgID = get_field('info-slika');
 						?>
+						<?php if (!empty($homeInfoImgID)) { ?>
+							<img src="<?php echo $homeInfoImgID; ?>" alt="">
+						<?php } else { ?>
+							<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="" class="img-fluid w-100">
+						<?php } ?>
+
 					</div>
 				</div>
 			</div>
@@ -112,13 +127,21 @@ $args = array(
 
 								<?php
 
-								$value = get_field('slika_usluge_post');
+								// $value = get_field('slika_usluge_post');
 
-								$image = $value['sizes']['large'];
+								// $image = $value['sizes']['large'];
 
-								echo "<img src='" . $image . "' width='60px' height='60px'>";
+								// echo "<img src='" . $image . "' width='60px' height='60px'>";
 
+
+								$serviceImgID = get_field('slika_usluge_post');
 								?>
+								<?php if (!empty($serviceImgID)) { ?>
+									<img src="<?php echo $serviceImgID; ?>" alt="" class="img-fluid w-100">
+								<?php } else { ?>
+									<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="" class="img-fluid w-100">
+								<?php } ?>
+
 
 							</div>
 							<h5><?php echo get_field('naslov'); ?></h5>

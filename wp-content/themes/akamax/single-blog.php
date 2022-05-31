@@ -60,22 +60,31 @@
                                 <h4 class="widget-title">Category</h4>
                                 <div class="divider"></div>
 
+
                                 <?php
-                                    $taxonomy = 'categories';
-                                    $args1=array(
-                                        'include'=> array(12,30)
-                                        );
-                                
-                                    $terms = get_terms('categories',$args1 );
-                                                      
-                                    foreach ($terms as $term) {
-                                        $term_link = get_term_link( $term, 'categories' );
-                                
+
+                                $categories = get_the_category();
+
+                                  // Get the ID of a given category
+                                //echo $category_id = get_cat_ID( 'Preduzetništvo' );
+
+                                // Get the URL of this category
+                               // echo $category_link = get_category_link( $category_id );
+
+
+                            //    / var_dump($categories);
+
+                                foreach ($categories as $cat) :
                                 ?>
+
                                     <ul class="categories">
-                                        <li><a href="<?php echo $term_link; ?>"><?php echo $term->name ?></a></li>
+                                        <li><a href="<?php get_category_link($cat->name); 
+                                                        ?>"><?php echo $cat->name 
+                                                                                    ?></a></li>
                                     </ul>
-                                <?php }?>
+
+                                <?php endforeach; ?>
+
                             </div>
 
                             <!-- Widget recent post -->
@@ -112,16 +121,16 @@
                                                             <a href="#"><span class="mai-person"></span> Admin</a>
                                                             <a href="#"><span class="mai-chatbubbles"></span> 19</a>
                                                 </div>
-                                            </div>    
+                                            </div>
                                         </div>
 
-                                        <?php endwhile; ?>
-                                        <!-- end of the loop -->
+                                    <?php endwhile; ?>
+                                    <!-- end of the loop -->
 
-                                    <?php else : ?>
-                                        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-                                    <?php endif; ?>
-                                    
+                                <?php else : ?>
+                                    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                                <?php endif; ?>
+
                             </div>
 
                             <!-- Widget Tag Cloud -->
@@ -129,15 +138,17 @@
                                 <h4 class="widget-title">Tag Cloud</h4>
                                 <div class="divider"></div>
 
+                                <?php 
+                                
+                                $tags = get_tags();
+                                
+                                foreach ($tags as $tag) :
+                                ?>
+
                                 <div class="tag-clouds">
-                                    <a href="#" class="tag-cloud-link">Projects</a>
-                                    <a href="#" class="tag-cloud-link">Design</a>
-                                    <a href="#" class="tag-cloud-link">Travel</a>
-                                    <a href="#" class="tag-cloud-link">Brand</a>
-                                    <a href="#" class="tag-cloud-link">Trending</a>
-                                    <a href="#" class="tag-cloud-link">Knowledge</a>
-                                    <a href="#" class="tag-cloud-link">Food</a>
+                                    <a href="#" class="tag-cloud-link"><?php echo $tag->name?></a>
                                 </div>
+                                <?php endforeach; ?>
                             </div>
 
                         </div>

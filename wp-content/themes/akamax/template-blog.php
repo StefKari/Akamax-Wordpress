@@ -18,7 +18,7 @@
 							<div class="avatar">
 								<img src="<?php echo bloginfo('template_directory'); ?>/img/person/person_3.jpg" alt="">
 							</div>
-							by <a href="#">Stephen Doe</a>
+							by <a href="#">Akamax</a>
 						</div>
 
 						<div class="post-sharer">
@@ -73,18 +73,14 @@
 
 
 
-		<nav aria-label="Page Navigation">
-			<?php
-			$big = 999999999; // need an unlikely integer
-			echo paginate_links(array(
-				'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-				'format' => '/page/%#%',
-				'current'       => max(1, get_query_var('paged')),
-				'prev_text'     => '< Prethodna',
-				'next_text'   => 'Sledeća >'
-			));
-			?>
-		</nav>
+
+
+		<div class="pagination">
+			<?php echo paginate_links( array(
+				'prev_text' => '<span>Prethodna</span>',
+				'next_text' => '<span>Sledeća</span>'
+			)); ?>
+		</div>
 
 
 

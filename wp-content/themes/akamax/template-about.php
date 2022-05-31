@@ -14,12 +14,19 @@
 				<div class="img-fluid ml-5">
 
 					<?php 
-						$value = get_field('slika');
+						// $value = get_field('slika');
 
-						$image = $value['sizes']['large'];
+						// $image = $value['sizes']['large'];
 
-						echo "<img src='".$image."' alt=''>";
-					?>
+						// echo "<img src='".$image."' alt=''>";
+
+						$about = get_field('slika');
+						?>
+						<?php if (!empty($about)) { ?>
+							<img src="<?php echo $about; ?>" alt="">
+						<?php } else { ?>
+							<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="" class="img-fluid w-100">
+						<?php } ?>
 				</div>
 			</div>
 		</div>
