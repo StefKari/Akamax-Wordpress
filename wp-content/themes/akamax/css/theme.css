@@ -1599,10 +1599,11 @@ a.text-dark:focus {
 
 .features h5 {
     color: #2D2B3A;
+    font-size: 1.35rem!important;
 }
 
 .features p {
-    font-size: 13px;
+    font-size: 1rem;
     color: #898798;
 }
 

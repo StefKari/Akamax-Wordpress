@@ -65,22 +65,12 @@
 
                                 $categories = get_the_category();
 
-                                  // Get the ID of a given category
-                                //echo $category_id = get_cat_ID( 'Preduzetništvo' );
-
-                                // Get the URL of this category
-                               // echo $category_link = get_category_link( $category_id );
-
-
-                            //    / var_dump($categories);
-
-                                foreach ($categories as $cat) :
+                                foreach ($categories as $cat):
                                 ?>
 
                                     <ul class="categories">
-                                        <li><a href="<?php get_category_link($cat->name); 
-                                                        ?>"><?php echo $cat->name 
-                                                                                    ?></a></li>
+                                        <li><a href="<?php echo "/" . $cat->slug;?>">
+                                                <?php echo $cat->name?></a></li>
                                     </ul>
 
                                 <?php endforeach; ?>
@@ -138,16 +128,16 @@
                                 <h4 class="widget-title">Tag Cloud</h4>
                                 <div class="divider"></div>
 
-                                <?php 
-                                
+                                <?php
+
                                 $tags = get_tags();
-                                
+
                                 foreach ($tags as $tag) :
                                 ?>
 
-                                <div class="tag-clouds">
-                                    <a href="#" class="tag-cloud-link"><?php echo $tag->name?></a>
-                                </div>
+                                    <div class="tag-clouds">
+                                        <a href="#" class="tag-cloud-link"><?php echo $tag->name ?></a>
+                                    </div>
                                 <?php endforeach; ?>
                             </div>
 

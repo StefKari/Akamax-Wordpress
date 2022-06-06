@@ -87,8 +87,8 @@
 				</div>
 			</div>
 		</div>
-	</div> 
-</div> 
+	</div>
+</div>
 <!-- Nnd Section Info  -->
 
 <!-- Section Usluge  -->
@@ -97,7 +97,7 @@
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = array(
 	'post_type' => 'usluge',
-	'posts_per_page' => 20, // ogranicavamo broj postova po strani na 4
+	'posts_per_page' => 3, // ogranicavamo broj postova po strani na 4
 	'paged' => $paged // sluzi kao offset WP-u
 );
 ?>
@@ -154,7 +154,7 @@ $args = array(
 
 		</div>
 	</div>
-</div> 
+</div>
 <!-- End Usluge  -->
 
 <!-- Section Prijava  -->
@@ -168,8 +168,8 @@ $args = array(
 				</div>
 			</div>
 		</div>
-	</div> 
-</div> 
+	</div>
+</div>
 <!-- End Section Prijava   -->
 
 

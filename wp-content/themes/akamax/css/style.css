@@ -130,7 +130,8 @@
 	background: linear-gradient(to right, #ba9f6a 0%, #c5a972 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
-        color: #ba9f6a;
+        /* color: #ba9f6a; */
+        color: #6C55F9;
     }
     /* .sliderDesc h1 span.gradientLetter,
   .sliderDesc h1 span b {
@@ -470,7 +471,7 @@
     
     .right-menu ul li a {
         color: rgba(100, 95, 136, 0.75);
-        font-weight: 900;
+        font-weight: 700;
     }
     
     .current-menu-item a {
@@ -519,4 +520,21 @@
         width: 1%;
         min-width: 0;
         margin-top: 49px!important;
+    }
+    /* Pagination Blog page*/
+    
+    .pagination .page-numbers {
+        align-items: center!important;
+        border: 1px solid #6C55F9!important;
+        padding: 5px 10px!important;
+        color: #645F88!important;
+    }
+    
+    .pagination .current {
+        background-color: #6C55F9;
+        color: #FFF!important;
+    }
+    
+    .pagination {
+        justify-content: center!important;
     }

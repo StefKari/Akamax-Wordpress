@@ -1,5 +1,5 @@
 <?php get_header();
-/* Template name: Blog strana */
+/* Template name: Knjigovodstvo strana */
 ?>
 
 
@@ -40,6 +40,7 @@
 			$args = array(
 				'post_type' => 'blog',
 				'posts_per_page' => 3, // ogranicavamo broj postova po strani na 4
+                'category_name' => 'Knjigovodstvo',
 				'paged' => $paged // sluzi kao offset WP-u
 			);
 
