@@ -4,7 +4,6 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-
             <div class="container">
 
                 <div class="row">
@@ -24,7 +23,7 @@
                                 <div class="meta-header">
                                     <div class="post-author">
                                         <div class="avatar">
-                                            <img src="../assets/img/person/person_1.jpg" alt="">
+                                            <img src="<?php echo bloginfo('template_directory'); ?>/img/person/person_3.jpg" alt="">
                                         </div>
                                         by <a href="#"><?php the_author(); ?></a>
                                     </div>
@@ -57,20 +56,18 @@
 
                             <!-- Widget Categories -->
                             <div class="widget-box">
-                                <h4 class="widget-title">Category</h4>
+                                <h4 class="widget-title">Kategorija</h4>
                                 <div class="divider"></div>
-
 
                                 <?php
 
                                 $categories = get_the_category();
 
-                                foreach ($categories as $cat):
+                                foreach ($categories as $cat) :
                                 ?>
-
                                     <ul class="categories">
-                                        <li><a href="<?php echo "/" . $cat->slug;?>">
-                                                <?php echo $cat->name?></a></li>
+                                        <li><a href="<?php echo "/" . $cat->slug; ?>">
+                                                <?php echo $cat->name ?></a></li>
                                     </ul>
 
                                 <?php endforeach; ?>
@@ -79,7 +76,7 @@
 
                             <!-- Widget recent post -->
                             <div class="widget-box">
-                                <h4 class="widget-title">Recent Post</h4>
+                                <h4 class="widget-title">Poslednje novosti</h4>
                                 <div class="divider"></div>
 
                                 <?php
@@ -100,16 +97,17 @@
                                                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
 
                                                 <?php } else { ?>
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog-date.png" alt="" class="img-fluid">
+                                                    <img src="<?php echo bloginfo('template_directory'); ?>/img/no-image.png" alt="" class="img-fluid">
+
                                                 <?php } ?>
                                                 <!-- <img src="../assets/img/blog/blog-1.jpg" alt=""> -->
                                             </a>
                                             <div class="content">
                                                 <h6 class="post-title"><a href="#"><?php the_title(); ?></a></h6>
                                                 <div class="meta">
-                                                    <a href="#"><span class="mai-calendar"></span><?php the_time('F j, Y'); ?><a>
-                                                            <a href="#"><span class="mai-person"></span> Admin</a>
-                                                            <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                                                    <a href="#"><span class="mai-calendar"></span> <?php the_time('F j, Y'); ?><a>
+                                                            <a href="#"><span class="mai-person"></span> <?php the_author(); ?></a>
+                                                            <!-- <a href="#"><span class="mai-chatbubbles"></span> 19</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -125,7 +123,7 @@
 
                             <!-- Widget Tag Cloud -->
                             <div class="widget-box">
-                                <h4 class="widget-title">Tag Cloud</h4>
+                                <h4 class="widget-title">Tagovi</h4>
                                 <div class="divider"></div>
 
                                 <?php
@@ -146,13 +144,12 @@
                 </div>
 
             </div>
-</div>
-
 
 <?php endwhile;
     else : ?>
-<p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
+<p><?php esc_html_e('Žao nam je, nijedan post ne odgovara vašim kriterijumima.'); ?></p>
 <?php endif; ?>
 
+</div>
 
 <?php get_footer(); ?>

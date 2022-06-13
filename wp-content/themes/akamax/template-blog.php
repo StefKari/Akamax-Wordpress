@@ -39,7 +39,7 @@
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 			$args = array(
 				'post_type' => 'blog',
-				'posts_per_page' => 3, // ogranicavamo broj postova po strani na 4
+				'posts_per_page' => 6, // ogranicavamo broj postova po strani na 4
 				'paged' => $paged // sluzi kao offset WP-u
 			);
 
@@ -55,7 +55,16 @@
 						<div class="header">
 							<div class="post-thumb">
 								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail('full', array('class' => 'imageFW')); ?>
+
+									<?php if (!empty(get_the_post_thumbnail())) { ?>
+
+										<?php the_post_thumbnail('full', array('class' => 'imageFW')); ?>
+
+									<?php } else { ?>
+										<img src="<?php echo bloginfo('template_directory'); ?>/img/no-image.png" alt="" class="img-fluid">
+
+									<?php } ?>
+
 								</a>
 								<!-- <img src="<?php // echo bloginfo('template_directory'); 
 												?>/img/blog/blog-1.jpg" alt=""> -->

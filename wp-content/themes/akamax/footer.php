@@ -5,7 +5,7 @@
 			<div class="col-lg-3 footer-logo">
 				<a href="/" class="navbar-brand"><img class="py-3" src="<?php echo bloginfo('template_directory'); ?>/img/logo.png"></a>
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet, repellendus eius blanditiis in iusto eligendi iure.</p>
+				<p>Računovodstvo služi da zapisuje poslovne promene i formira izveštaje sa određenim informacijama, bavljenje finansijama podrazumeva korišćenje tih informacija u svrhu donošenja poslovnih odluka..</p>
 
 				<div class="social-media-button">
 					<a href="#"><span class="mai-logo-facebook-f"></span></a>
@@ -33,10 +33,13 @@
 			<div class="col-lg-3 py-3">
 				<h5>Newsletter</h5>
 				<p>Dobijajte ažuriranja, vesti ili događaje na svoju poštu..</p>
-				<form action="#">
+
+				<?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true"]') ?>
+
+				<!-- <form action="#">
 					<input type="text" class="form-control" placeholder="Unesite svoj email...">
 					<button type="submit" class="btn btn-success btn-block mt-2">Pretplatiti se</button>
-				</form>
+				</form> -->
 			</div>
 		</div>
 
@@ -58,6 +61,8 @@
 <script src="<?php echo bloginfo('template_directory'); ?>/js/theme.js"></script>
 
 <script src="<?php echo bloginfo('template_directory');?>/js/custom.js"></script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 

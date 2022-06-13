@@ -178,7 +178,7 @@ $args = array(
 	<div class="container">
 		<div class="text-center wow fadeInUp">
 			<div class="subhead">Naš blog</div>
-			<h2 class="title-section">Pročitajte najnovija dešavanja o knjigovodstvu</h2>
+			<h2 class="title-section">Pročitajte najnovija dešavanja o Računovodstvo & Finansije</h2>
 			<div class="divider mx-auto"></div>
 		</div>
 
@@ -199,10 +199,11 @@ $args = array(
 
 									<?php if (!empty(get_the_post_thumbnail())) { ?>
 
-										<?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+										<?php the_post_thumbnail('full', array('class' => 'imageFW')); ?>
 
 									<?php } else { ?>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/blog-date.png" alt="" class="img-fluid">
+										<img src="<?php echo bloginfo('template_directory'); ?>/img/no-image.png" alt="" class="img-fluid">
+
 									<?php } ?>
 								</div>
 							</div>

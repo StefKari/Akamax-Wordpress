@@ -39,7 +39,7 @@
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 			$args = array(
 				'post_type' => 'blog',
-				'posts_per_page' => 3, // ogranicavamo broj postova po strani na 4
+				'posts_per_page' => 6, // ogranicavamo broj postova po strani na 4
                 // 'category_name' => 'Preduzetništvo',
                 'category_name' => 'Preduzetništvo',
 				'paged' => $paged // sluzi kao offset WP-u

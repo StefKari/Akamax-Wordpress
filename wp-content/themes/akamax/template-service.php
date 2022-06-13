@@ -65,16 +65,4 @@ $args = array(
 </div> <!-- .page-section -->
 
 
-
-<!-- <div class="page-section bg-light sk-top-page-content-service"> -->
-<!-- <div class="container"> -->
-<!-- <div class="text-center"> -->
-<?php //echo do_shortcode('[WPSM_AC id=44]') 
-?>
-<!-- </div> -->
-<!-- </div>
-</div>  -->
-
-
-
 <?php get_footer(); ?>

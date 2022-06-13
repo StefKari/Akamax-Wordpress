@@ -24,7 +24,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('template_directory'); ?>/css/main-slider.css" />
 
 
-
 	<?php wp_head(); ?>
 
 	<style>
