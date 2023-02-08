@@ -5,19 +5,20 @@
 			<div class="col-lg-3 footer-logo">
 				<a href="/" class="navbar-brand"><img class="py-3" src="<?php echo bloginfo('template_directory'); ?>/img/logo.png"></a>
 
-				<p>Računovodstvo služi da zapisuje poslovne promene i formira izveštaje sa određenim informacijama, bavljenje finansijama podrazumeva korišćenje tih informacija u svrhu donošenja poslovnih odluka..</p>
+				<p>Šta Vi osećate kada Vam računovođa donese finansijski izveštaj?
+Ukoliko osećate paniku podhitno menjajte taktiku.</p>
 
 				<div class="social-media-button">
-					<a href="#"><span class="mai-logo-facebook-f"></span></a>
-					<a href="#"><span class="mai-logo-twitter"></span></a>
+					<a href="https://www.facebook.com/ankica.ivanovic.5249"><span class="mai-logo-facebook-f"></span></a>
 					<a href="#"><span class="mai-logo-google-plus-g"></span></a>
-					<a href="#"><span class="mai-logo-instagram"></span></a>
-					<a href="#"><span class="mai-logo-youtube"></span></a>
+					<a href="https://www.instagram.com/akamax.rs/"><span class="mai-logo-instagram"></span></a>
+					<a href="https://www.linkedin.com/in/ankica-ivanovi%C4%87-3731a7a4/"><span class="mai-logo-linkedin"></span></a>
 				</div>
 			</div>
 			<div class="col-lg-3 py-3">
 				<h5>Meni</h5>
 				<ul class="footer-menu">
+					<li><a href="/">Početna</a></li>
 					<li><a href="/o-nama">O nama</a></li>
 					<li><a href="/usluge-2">Usluge</a></li>
 					<li><a href="/blog-2">Blog</a></li>
@@ -43,7 +44,7 @@
 			</div>
 		</div>
 
-		<p class="text-center" id="copyright">Copyright &copy; <?php echo date('Y'); ?>. Sva prava sajta zadrzava by <a href="http://stefkari.dx.am/" target="_blank">Stef</a></p>
+		<p class="text-center" id="copyright">Copyright &copy; <?php echo date('Y'); ?>. Sva prava zadržana. Izrada by <a href="http://stefkari.dx.am/" target="_blank">Stef</a></p>
 	</div>
 </footer>
 <?php wp_footer(); ?>
@@ -61,6 +62,8 @@
 <script src="<?php echo bloginfo('template_directory'); ?>/js/theme.js"></script>
 
 <script src="<?php echo bloginfo('template_directory');?>/js/custom.js"></script>
+
+<script src="<?php echo bloginfo('template_directory');?>/js/cookieconsent.min.js"></script>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 

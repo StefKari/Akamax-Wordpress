@@ -11,7 +11,7 @@
 			<div class="blog-single-wrap">
 				<div class="header">
 					<div class="post-thumb">
-						<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="">
+						<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog.jpg" alt="">
 					</div>
 					<div class="meta-header">
 						<div class="post-author">
@@ -40,7 +40,7 @@
 			$args = array(
 				'post_type' => 'blog',
 				'posts_per_page' => 6, // ogranicavamo broj postova po strani na 4
-                'category_name' => 'Knjigovodstvo',
+				'category_name' => 'Knjigovodstvo',
 				'paged' => $paged // sluzi kao offset WP-u
 			);
 
@@ -56,10 +56,17 @@
 						<div class="header">
 							<div class="post-thumb">
 								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail('full', array('class' => 'imageFW')); ?>
+
+									<?php if (!empty(get_the_post_thumbnail())) { ?>
+
+										<?php the_post_thumbnail('full', array('class' => 'imageFW')); ?>
+
+									<?php } else { ?>
+										<img src="<?php echo bloginfo('template_directory'); ?>/img/no-image.png" alt="" class="img-fluid">
+
+									<?php } ?>
+
 								</a>
-								<!-- <img src="<?php // echo bloginfo('template_directory'); 
-												?>/img/blog/blog-1.jpg" alt=""> -->
 							</div>
 						</div>
 						<div class="body">

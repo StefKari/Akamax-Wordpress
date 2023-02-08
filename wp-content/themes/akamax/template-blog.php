@@ -11,7 +11,7 @@
 			<div class="blog-single-wrap">
 				<div class="header">
 					<div class="post-thumb">
-						<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="">
+						<img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-banner.jpg" alt="">
 					</div>
 					<div class="meta-header">
 						<div class="post-author">
@@ -22,9 +22,9 @@
 						</div>
 
 						<div class="post-sharer">
-							<a href="#" class="btn social-facebook"><span class="mai-logo-facebook-f"></span></a>
+							<a href="https://www.facebook.com/ankica.ivanovic.5249" class="btn social-facebook"><span class="mai-logo-facebook-f"></span></a>
 							<a href="#" class="btn social-twitter"><span class="mai-logo-twitter"></span></a>
-							<a href="#" class="btn social-linkedin"><span class="mai-logo-linkedin"></span></a>
+							<a href="https://www.linkedin.com/in/ankica-ivanovi%C4%87-3731a7a4/" class="btn social-linkedin"><span class="mai-logo-linkedin"></span></a>
 							<a href="#" class="btn"><span class="mai-mail"></span></a>
 						</div>
 					</div>
@@ -50,7 +50,7 @@
 			while ($wp_query->have_posts()) : $wp_query->the_post();
 			?>
 
-				<div class="col-lg-4 py-3">
+				<div class="col-lg-4 py-4">
 					<div class="card-blog">
 						<div class="header">
 							<div class="post-thumb">
@@ -66,13 +66,11 @@
 									<?php } ?>
 
 								</a>
-								<!-- <img src="<?php // echo bloginfo('template_directory'); 
-												?>/img/blog/blog-1.jpg" alt=""> -->
 							</div>
 						</div>
 						<div class="body">
 							<h5 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h5>
-							<div class="post-date">Posted on <a href="#"><?php the_time('F j, Y'); ?></a></div>
+							<div class="post-date mt-3">Objavljeno <a href="#"><?php the_time('F j, Y'); ?></a></div>
 						</div>
 					</div>
 				</div>

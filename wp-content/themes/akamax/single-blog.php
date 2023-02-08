@@ -17,7 +17,7 @@
                                     <?php if (!empty($imgID)) { ?>
                                         <img src="<?php echo $imgID; ?>" alt="" class="img-fluid w-100">
                                     <?php } else { ?>
-                                        <img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog-1.jpg" alt="" class="img-fluid w-100">
+                                        <img src="<?php echo bloginfo('template_directory'); ?>/img/blog/blog.jpg" alt="" class="img-fluid w-100">
                                     <?php } ?>
                                 </div>
                                 <div class="meta-header">
@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h1 class="post-title"><?php the_title(); ?>r</h1>
+                            <h1 class="post-title"><?php the_title(); ?></h1>
                             <div class="post-meta">
                                 <div class="post-date">
                                     <span class="icon">
@@ -103,7 +103,7 @@
                                                 <!-- <img src="../assets/img/blog/blog-1.jpg" alt=""> -->
                                             </a>
                                             <div class="content">
-                                                <h6 class="post-title"><a href="#"><?php the_title(); ?></a></h6>
+                                                <h6 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
                                                 <div class="meta">
                                                     <a href="#"><span class="mai-calendar"></span> <?php the_time('F j, Y'); ?><a>
                                                             <a href="#"><span class="mai-person"></span> <?php the_author(); ?></a>
@@ -127,8 +127,19 @@
                                 <div class="divider"></div>
 
                                 <?php
+                                    $tags = get_tags();
 
-                                $tags = get_tags();
+                                    echo get_the_term_list( get_the_ID(), 'test', '', ',' );
+                                    // echo "<pre>";
+                                    // var_dump($categories);
+
+                                    // var_dump($tags);
+
+                                    // var_dump(get_the_tags());
+                                    // echo "</pre>";
+                                    // /var_dump(get_post_meta(get_the_ID(), 'test', true));
+
+                               
 
                                 foreach ($tags as $tag) :
                                 ?>
