@@ -30,47 +30,13 @@
 
 
 	<?php wp_head(); ?>
-
-	<style>
-		/* .right-menu ul{
-		display: flex;
-		padding-left: 0;
-	}
-
-	.right-menu ul li{
-
-		list-style: none;
-		transition: all .2s ease;
-		padding: 0.5rem 1rem;
-		padding-right: 16px;
-		padding-left: 16px;
-		
-	}
-
-	.right-menu ul li a {
-		color: rgba(100, 95, 136, 0.75);
-		font-weight: 900;
-
-	}
-
-	.current-menu-item a {
-		color: #6C55F9!important;
-		text-decoration: none;
-	}
-
-
-
-	a:hover {
-		text-decoration: none!important;
-	} */
-	</style>
 </head>
 
 <body <?php body_class(); ?>>
 
 	<!-- Preloader -->
 	<div id="preloader">
-		<div class="preloader__status">
+		<div class="loader">
 		</div>
 	</div>
 

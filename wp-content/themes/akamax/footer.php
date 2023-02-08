@@ -63,6 +63,8 @@ Ukoliko osećate paniku podhitno menjajte taktiku.</p>
 
 <script src="<?php echo bloginfo('template_directory');?>/js/custom.js"></script>
 
+<script src="<?php echo bloginfo('template_directory');?>/js/cookieconsent.min.js"></script>
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>

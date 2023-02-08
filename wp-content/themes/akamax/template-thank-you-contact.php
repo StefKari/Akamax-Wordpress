@@ -3,29 +3,17 @@
 ?>
 
 
-<div class="page-section">
+<div class="thank-page padding-header">
     <div class="container">
-        <div class="row text-center align-items-center mb-4">
-
-        <div class="thank-page padding-header ">
-            <div class="container">
-            <div class="thank-page-wrapper">
-                <h2>OBAVJEŠTENJE</h2>
-                <h1>Hvala na upitu. <br> <span> Uskoro ćemo vas kontaktirati. </span>
+        <div class="thank-page-wrapper">
+            <h2>OBAVEŠTENJE</h2>
+            <h1>Hvala na upitu. <br> 
+                <span> Uskoro ćemo vas kontaktirati. </span>
             </h1>
         </div>
     </div>
 </div>
         
-            <!-- <div class="col-lg-12 mb-4">
-                <h1 class="mb-4">Hvala na poslatom upitu. Kontaktiraćemo Vas uskoro!</h1>
-                <div class="img-fluid mb-4">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/img/thank-you.jpg" alt="" class="img-fluid">
-                </div>
-            </div> -->
-        </div> <!-- .container -->
-    </div> <!-- .page-section -->
-</div>
 
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

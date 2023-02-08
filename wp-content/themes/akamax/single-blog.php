@@ -103,7 +103,7 @@
                                                 <!-- <img src="../assets/img/blog/blog-1.jpg" alt=""> -->
                                             </a>
                                             <div class="content">
-                                                <h6 class="post-title"><a href="#"><?php the_title(); ?></a></h6>
+                                                <h6 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
                                                 <div class="meta">
                                                     <a href="#"><span class="mai-calendar"></span> <?php the_time('F j, Y'); ?><a>
                                                             <a href="#"><span class="mai-person"></span> <?php the_author(); ?></a>

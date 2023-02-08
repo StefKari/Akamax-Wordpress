@@ -2,14 +2,17 @@
 /* Template name: Hvala vam newsletter strana */
 ?>
 
-<div class="page-section bg-light sk-top-page-content">
-    <div class="container">
-        <div class="row text-center align-items-center">
-            <div class="col-lg-4 py-3">
-                <h1>Hvala na poslatom upitu. Kontaktiracemo Vas uskoro!</h1>
-            </div>
-        </div> <!-- .container -->
-    </div> <!-- .page-section -->
 
+<div class="thank-page padding-header">
+    <div class="container">
+        <div class="thank-page-wrapper">
+            <h2>OBAVEŠTENJE</h2>
+            <h1>Hvala na upitu. <br> 
+                <span> Uskoro ćemo vas kontaktirati. </span>
+            </h1>
+        </div>
+    </div>
+</div>
+        
 
 <?php get_footer(); ?>
