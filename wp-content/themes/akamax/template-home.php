@@ -163,7 +163,7 @@ $args = array(
 		<div class="container text-center">
 			<div class="row justify-content-center wow fadeInUp">
 				<div class="col-lg-8">
-					<h2 class="mb-4">Prijavite se već danas</h2>
+					<h2>Za naše usluge prijavite se već danas</h2>
 					<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
 				</div>
 			</div>
@@ -209,7 +209,7 @@ $args = array(
 							</div>
 							<div class="body">
 								<h5 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-								<div class="post-date">Posted on <a href="#"><?php the_time('F j, Y'); ?></a></div>
+								<div class="post-date mt-3">Objavljeno <a href="#"><?php the_time('F j, Y'); ?></a></div>
 							</div>
 						</div>
 					</div>

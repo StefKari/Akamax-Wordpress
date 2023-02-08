@@ -7,8 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="msapplication-navbutton-color" content="#104b7f">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#104b7f">
+	<meta name="msapplication-navbutton-color" content="#104b7f">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#104b7f">
+
+	<meta property="og:site_name" content="Akamax">
+	<meta property="og:title" content="Akamax računovodstvo" />
+	<meta property="og:description" content="Akamax računovodstvo, knjigovodstvo, Novi Pazar, Južna Srbija" />
+	<meta property="og:image" itemprop="image" content="<?php echo bloginfo('template_directory'); ?>/img/logo.png">
 
 	<title><?php wp_title(); ?></title>
 
@@ -27,8 +32,7 @@
 	<?php wp_head(); ?>
 
 	<style>
-
-	/* .right-menu ul{
+		/* .right-menu ul{
 		display: flex;
 		padding-left: 0;
 	}
@@ -59,12 +63,16 @@
 	a:hover {
 		text-decoration: none!important;
 	} */
-
-
 	</style>
 </head>
 
 <body <?php body_class(); ?>>
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader__status">
+		</div>
+	</div>
 
 	<!-- Back to top button -->
 	<div class="back-to-top"></div>
@@ -84,36 +92,12 @@
 					<ul class="navbar-nav ml-auto">
 
 						<div class="right-menu">
-						<?php
-						wp_nav_menu(array('container_class' => 'menu-header',
-							'theme_location' => 'main-menu')); ?>
+							<?php
+							wp_nav_menu(array(
+								'container_class' => 'menu-header',
+								'theme_location' => 'main-menu'
+							)); ?>
 						</div>
-
-
-
-<!-- 
-						<li class="nav-item active"> 
-						 <li class="nav-item">
-							<a class="nav-link" href="/pocetna">Pocetna</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/o-nama">O nama</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/ponuda">Usluge</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/blog-2/">Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/kontakt">Kontakt</a>
-						</li> --> 
-
-
-
-						<!-- <li class="nav-item">
-              <a class="btn btn-primary ml-lg-2" href="#">Free Analytics</a>
-            </li> -->
 					</ul>
 				</div>
 
