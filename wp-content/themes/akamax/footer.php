@@ -27,9 +27,9 @@ Ukoliko osećate paniku podhitno menjajte taktiku.</p>
 			</div>
 			<div class="col-lg-3 py-3">
 				<h5>Kontaktirajte nas</h5>
-				<p>Novi Pazar Stevana Nemanje bb</p>
-				<a href="#" class="footer-link">+00 1122 3344 5566</a>
-				<a href="#" class="footer-link">akamax@gmail.com</a>
+				<p>Novi Pazar, Stevana Nemanje 198</p>
+				<a href="tel:+381 694566802" class="footer-link">069 45 66 802</a>
+				<a href="mailto:infoakamax.rs@gmail.com" class="footer-link">infoakamax.rs@gmail.com</a>
 			</div>
 			<div class="col-lg-3 py-3">
 				<h5>Newsletter</h5>

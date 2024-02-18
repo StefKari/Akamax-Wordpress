@@ -1,45 +1,50 @@
 /* Sticky Navigation */
 $(function() {
 
-    var sticky = $('.sticky');
-    var contentOffset;
-    var nav_height;
+    var currentURL = window.location.href;
 
-    if (sticky.length) {
+    if (currentURL !== "http://akamax.local/list-usluge/") {
 
-        if (sticky.data('offset')) {
-            contentOffset = sticky.data('offset');
-        } else {
-            contentOffset = sticky.offset().top;
+        var sticky = $('.sticky');
+        var contentOffset;
+        var nav_height;
+
+        if (sticky.length) {
+
+            if (sticky.data('offset')) {
+                contentOffset = sticky.data('offset');
+            } else {
+                contentOffset = sticky.offset().top;
+            }
+            nav_height = sticky.height();
         }
-        nav_height = sticky.height();
-    }
 
-    var scrollTop = $(window).scrollTop();
-    var window_height = $(window).height();
-    var doc_height = $(document).height();
+        var scrollTop = $(window).scrollTop();
+        var window_height = $(window).height();
+        var doc_height = $(document).height();
 
-    $(window).bind('resize', function() {
-        scrollTop = $(window).scrollTop();
-        window_height = $(window).height();
-        doc_height = $(document).height();
-        navHeight();
-    });
+        $(window).bind('resize', function() {
+            scrollTop = $(window).scrollTop();
+            window_height = $(window).height();
+            doc_height = $(document).height();
+            navHeight();
+        });
 
-    $(window).bind('scroll', function() {
-        stickyNav();
-    });
+        $(window).bind('scroll', function() {
+            stickyNav();
+        });
 
-    function navHeight() {
-        sticky.css('max-height', window_height + 'px');
-    }
+        function navHeight() {
+            sticky.css('max-height', window_height + 'px');
+        }
 
-    function stickyNav() {
-        scrollTop = $(window).scrollTop();
-        if (scrollTop > contentOffset) {
-            sticky.addClass('fixed');
-        } else {
-            sticky.removeClass('fixed');
+        function stickyNav() {
+            scrollTop = $(window).scrollTop();
+            if (scrollTop > contentOffset) {
+                sticky.addClass('fixed');
+            } else {
+                sticky.removeClass('fixed');
+            }
         }
     }
 
@@ -78,6 +83,7 @@ $('document').ready(function() {
         }, 1000);
         return false;
     });
+
 });
 
 
