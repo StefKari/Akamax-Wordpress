@@ -1,6 +1,5 @@
 $(document).ready(function() {
     // Flex slider
-
     $(".flexslider").flexslider({
         animation: "slide",
         slideshow: true,

@@ -14,14 +14,14 @@
 			<div class="col-lg-4 py-3">
 				<div class="display-4 text-center text-primary"><span class="mai-call"></span></div>
 				<p class="mb-3 font-weight-medium text-lg">Telefon</p>
-				<p class="mb-0"><a href="#" class="text-secondary">+381 655555555</a></p>
-				<p class="mb-0"><a href="#" class="text-secondary">+020 121212121</a></p>
+				<p class="mb-0"><a href="tel:+381 694566802" class="text-secondary">069 45 66 802</a></p>
+				<!-- <p class="mb-0"><a href="#" class="text-secondary">+020 121212121</a></p> -->
 			</div>
 			<div class="col-lg-4 py-3">
 				<div class="display-4 text-center text-primary"><span class="mai-mail"></span></div>
 				<p class="mb-3 font-weight-medium text-lg">Email Adresa</p>
-				<p class="mb-0"><a href="#" class="text-secondary">akamx@gmail.com</a></p>
-				<p class="mb-0"><a href="#" class="text-secondary">ankica@gmail.com</a></p>
+				<p class="mb-0"><a href="mailto:infoakamax.rs@gmail.com" class="text-secondary">infoakamax.rs@gmail.com</a></p>
+				<!-- <p class="mb-0"><a href="#" class="text-secondary">ankica@gmail.com</a></p> -->
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 				<div class="maps-container">
 					<div id="google-maps">
 						<iframe 
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727.7331631284019!2d20.520793899999997!3d43.147943500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4756286ec67f306f%3A0x53ce6678f49e2777!2sStevana%20Nemanje%20198%2C%20Novi%20Pazar%2036300!5e0!3m2!1sen!2srs!4v1653155733150!5m2!1sen!2srs"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4428.5443542218545!2d20.5167423168768!3d43.1477231023237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47562953039e357d%3A0x3f8c50742ad5191c!2sAKAMAX%20RA%C4%8CUNOVODSTVO!5e0!3m2!1sen!2srs!4v1708276406680!5m2!1sen!2srs"
 							width="100%" 
 							height="100%"
 							style="border:0;" 

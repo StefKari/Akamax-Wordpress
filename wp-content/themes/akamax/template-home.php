@@ -221,7 +221,7 @@ $args = array(
 			<?php endif; ?>
 
 			<div class="col-12 mt-4 text-center wow fadeInUp">
-				<a href="/blog-2" class="btn btn-primary">Pogledaje više</a>
+				<a href="/list-blog" class="btn btn-primary">Pogledaje više</a>
 			</div>
 		</div>
 	</div>
